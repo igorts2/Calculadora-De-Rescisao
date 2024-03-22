@@ -43,6 +43,3 @@ Contribuições são bem-vindas! Se você encontrar algum problema, ou tiver alg
 ---
 
 Espero que essa documentação ajude a compreender e utilizar o projeto. Se precisar de mais informações ou tiver alguma dúvida, não hesite em entrar em contato.
-![Cadastro](Calculadora-De-Rescisao/Images/cadastro.png)
-
-![Resultado](Calculadora-De-Rescisao/Images/resultado.png)
