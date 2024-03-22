@@ -1,0 +1,53 @@
+﻿@model calculo_de_rescisão.Models.Rescisao
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado da Rescisão</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .result-item {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado da Rescisão</h1>
+
+        <h2>Dados da Rescisão:</h2>
+        <p>Data de Início: <span class="result-item">@Model.DataInicio.ToShortDateString()</span></p>
+        <p>Data de Término: <span class="result-item">@Model.DataFinal.ToShortDateString()</span></p>
+        <p>Motivo: <span class="result-item">@Model.Motivo</span></p>
+        <p>Último Salário: <span class="result-item">@Model.Salario</span></p>
+        <p>Aviso Prévio: <span class="result-item">@Model.Aviso</span></p>
+        <p>Férias Pendentes: <span class="result-item">@Model.Ferias</span></p>
+
+        <h2>Resultados:</h2>
+
+        <p>Saldo do Salário: <span class="result-item">@ViewBag.SaldoSalario</span></p>
+        <p>Aviso Prévio: <span class="result-item">@ViewBag.AvisoPrevio</span></p>
+        <p>Férias Proporcionais: <span class="result-item">@ViewBag.FeriasProporcionais</span></p>
+        <p>Décimo Terceiro: <span class="result-item">@ViewBag.DecimoTerceiro</span></p>
+        <p>FGTS + multa rescisória (se houver): <span class="result-item">@ViewBag.FGTS</span></p>
+    </div>
+</body>
+</html>
